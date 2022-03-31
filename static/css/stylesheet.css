@@ -1,0 +1,7 @@
+body {
+  background-color: lightblue;
+}
+
+input[readonly] {
+  background-color: #dcdcdc;
+}

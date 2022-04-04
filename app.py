@@ -10,14 +10,10 @@ friend_list = [{"name": "Tyler Nachman" } ]
 
 @app.route('/')
 def index():
-    if request.method == 'GET':
-        return render_template('index.html')
     return render_template('index.html', pageTitle='Vertical Tank Maintenance')
 
 @app.route('/about')
 def about():
-    if request.method == 'GET':
-        return render_template('about.html')
     return render_template('about.html', pageTitle='About Us')
 
 @app.route('/estimate', methods=['GET', 'POST'])
@@ -33,7 +29,7 @@ def estimate():
         sqft = area / 144
         material = sqft * 25
         labor = sqft * 15
-        estimate = round(material + labor, 2)
+        estimate = "${:,.2f}".format((round(material + labor, 2)))
         return render_template('estimate.html', quote=estimate)
     return render_template('estimate.html', pageTitle="Get an Estimate")
 

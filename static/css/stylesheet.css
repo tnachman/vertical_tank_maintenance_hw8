@@ -40,3 +40,10 @@ li {
 figcaption {
   margin-top: 5px;
 }
+
+hr {
+  height: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #333;
+}

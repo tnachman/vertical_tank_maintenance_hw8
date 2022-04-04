@@ -1,7 +1,42 @@
 body {
-  background-color: lightblue;
+  background-color: lightgrey;
 }
 
 figure {
   margin-left: 0px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: cadetblue;
+}
+
+.active {
+  background-color: cadetblue;
+}
+
+li {
+  border-right: 1px solid #bbb;
+}
+
+figcaption {
+  margin-top: 5px;
 }

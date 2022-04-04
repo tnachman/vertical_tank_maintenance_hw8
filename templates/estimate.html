@@ -1,10 +1,15 @@
 {% extends 'base.html' %}
 
 {% block body %}
+<nav>
+    <ul>
+      <li><a href="./">Home</a></li>
+      <li><a href="./about">About Us</a></li>
+      <li><a class="active" href="./estimate">Get an Estimate</a></li>
+    </ul>
+  </nav>
 
-<h2> Estimate </h2>
-<hr />
-<br />
+<h2> VTM Estimator </h2>
 <form action="/estimate" method="POST">
 	<label for="radius">Radius (in inches):</label>
 	<input type="number" id="radius" name="radius" autofocus required />
@@ -17,6 +22,6 @@
 </form>
 <br />	
 {% if quote %}
- The estimate for painting the tank is ${{quote}}.
+ The estimate for painting the tank is {{quote}}.
 {% endif %}
 {% endblock %}

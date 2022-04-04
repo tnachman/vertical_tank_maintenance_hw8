@@ -19,7 +19,6 @@ def estimate():
         form = request.form
         radius = float(form['radius'])
         height = float(form['height'])
-        
         estimate=radius+height
         return render_template('estimate.html', quote=estimate)
     return render_template('estimate.html')

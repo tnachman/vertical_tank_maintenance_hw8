@@ -47,3 +47,7 @@ hr {
   margin-right: auto;
   background-color: #333;
 }
+
+input {
+  margin-top: 5px;
+}

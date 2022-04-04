@@ -33,7 +33,7 @@ def estimate():
         sqft = area / 144
         material = sqft * 25
         labor = sqft * 15
-        estimate= material + labor
+        estimate = round(material + labor, 2)
         return render_template('estimate.html', quote=estimate)
     return render_template('estimate.html', pageTitle="Get an Estimate")
 

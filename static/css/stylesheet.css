@@ -62,3 +62,7 @@ footer {
   margin-right: auto;
   margin-top: 5px;
 }
+
+p.price {
+  font-weight: bold;
+}

@@ -6,8 +6,6 @@ from flask import render_template, redirect, request, url_for
 
 app = Flask(__name__)
 
-friend_list = [{"name": "Tyler Nachman" } ]
-
 @app.route('/')
 def index():
     return render_template('index.html', pageTitle='Vertical Tank Maintenance')

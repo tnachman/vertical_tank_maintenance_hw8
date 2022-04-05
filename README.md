@@ -18,9 +18,3 @@ Basic flask application for class
 5. Create and change to a new local development branch ```git checkout b development```
 
 6. Continue working with the project as you normally would.
-
-- [x] ~~Get Flask running on local computer~~
-- [x] ~~Add web form for users~~
-- [ ] Collect web form data and manipulate
-- [ ] Read API data from another source
-- [ ] Read database data from RDBMS

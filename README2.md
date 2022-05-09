@@ -1,6 +1,6 @@
-# Project Name
-> Outline a brief description of your project.
-> Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
+# Flask Website used to calculate the cost to paint Vertical Tanks
+> This website contains a form that will calculate the estimate that it costs to paint a vertical tank based on the form inputs "radius" and "height" in inches.
+
 
 ## Table of Contents
 * [General Info](#general-information)
@@ -17,69 +17,54 @@
 
 
 ## General Information
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+- Estimates cost to paint vertical tanks given radius and height of tank as inputs of form
+- Quotes for painting vertical tanks
+- Originally it was a class project, I plan to revamp the project and utilize it for other purposes.
 
 
 ## Technologies Used
-- Tech 1 - version 1.0
-- Tech 2 - version 2.0
-- Tech 3 - version 3.0
+- ![Azure](https://img.shields.io/badge/-Azure-blue?logo=microsoftazure)
+- ![Flask](https://img.shields.io/badge/-Flask-black?logo=flask)
 
 
 ## Features
 List the ready features here:
-- Awesome feature 1
-- Awesome feature 2
-- Awesome feature 3
-
-
-## Screenshots
-![Example screenshot](./img/screenshot.png)
-<!-- If you have screenshots you'd like to share, include them here. -->
+- Form asking for radius and height in inches of a vertical tank
+- Calculates quote based on inputs given to form
 
 
 ## Setup
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
+1. Clone this repository to local computer
 
-Proceed to describe how to install / setup one's local environment / get started with the project.
+2. Create a new virtual environment. ```python -m venv ./venv```
 
+3. Activate the new virtual environment
+   - Windows:  ```.\venv\Scripts\activate```
+   - Mac:  ```source ./venv/bin/activate```
 
-## Usage
-How does one go about using it?
-Provide various use cases and code examples here.
+4. Install the dependencies ```pip install -r requirements.txt```
 
-`write-your-code-here`
+5. Create and change to a new local development branch ```git checkout b development```
+
+6. Continue working with the project as you normally would.
 
 
 ## Project Status
-Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why.
+Project is: _in progress_
 
 
 ## Room for Improvement
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
 
 Room for improvement:
-- Improvement to be done 1
-- Improvement to be done 2
+- better and more appealing css formatting
+- change the form to work for other purposes depending on what I would like to use the site for in the future.
 
 To do:
-- Feature to be added 1
-- Feature to be added 2
-
-
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- This project was based on [this tutorial](https://www.example.com).
-- Many thanks to...
+- add a way to send emails or even call from the website
 
 
 ## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
+Created by [@tnachman](https://github.com/tnachman) - feel free to contact me!
 
 
 <!-- Optional -->
